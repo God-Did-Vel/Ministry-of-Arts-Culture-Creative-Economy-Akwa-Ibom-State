@@ -13,9 +13,9 @@ A modern digital government platform developed with **TypeScript**, **Next.js**,
 </p>
 
 <p align="center">
-    <a href="https://your-live-demo.com">🌐 Live Demo</a>
+    <a href="https://ministry-of-arts-culture-website.vercel.app">🌐 Live Demo</a>
     •
-    <a href="https://github.com/yourusername/ministry-art-culture">📂 GitHub Repository</a>
+    <a href="https://github.com/God-Did-Vel/Ministry-of-Arts-Culture-Creative-Economy-Akwa-Ibom-State">📂 GitHub Repository</a>
 </p>
 
 ---
@@ -199,42 +199,6 @@ ministry-art-culture/
 └── package.json
 ```
 
----
-
-# 📸 Screenshots
-
-## 🏠 Homepage
-
-![Homepage](./public/images/homepage.png)
-
----
-
-## 🎭 Heritage Portal
-
-![Heritage](./public/images/heritage.png)
-
----
-
-## 🏛 Virtual Museum
-
-![Museum](./public/images/museum.png)
-
----
-
-## 📊 Citizen Dashboard
-
-![Dashboard](./public/images/dashboard.png)
-
----
-
-## 🎉 Events
-
-![Events](./public/images/events.png)
-
-> Replace the placeholder screenshots with actual images from your project.
-
----
-
 # 🌍 Core Modules
 
 * Ministry Information
@@ -255,7 +219,7 @@ ministry-art-culture/
 # ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourusername/ministry-art-culture.git
+git clone https://github.com/God-Did-Vel/Ministry-of-Arts-Culture-Creative-Economy-Akwa-Ibom-State
 
 cd ministry-art-culture
 
