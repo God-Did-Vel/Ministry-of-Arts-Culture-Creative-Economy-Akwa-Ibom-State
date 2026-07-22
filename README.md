@@ -5,7 +5,7 @@
 A modern digital government platform developed with **TypeScript**, **Next.js**, and modern web technologies to promote cultural heritage, empower creative industries, provide digital government services, and preserve the rich traditions of **Akwa Ibom State, Nigeria — The Land of Promise**.
 
 <p align="center">
-    <img src="./public/images/banner.png" alt="Akwa Ibom Ministry of Arts & Culture" width="100%">
+    <img src="./public/Images/banner.png" alt="Akwa Ibom Ministry of Arts & Culture" width="100%">
 </p>
 
 <p align="center">
