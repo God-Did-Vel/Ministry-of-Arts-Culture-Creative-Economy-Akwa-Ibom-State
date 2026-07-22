@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
+
+  --color-gov-green: #0B5E3C;
+  --color-gov-darkgreen: #073c26;
+  --color-gov-gold: #C7A349;
+  --color-gov-darkgold: #b08e3d;
+  --color-gov-navy: #111A2E;
+  --color-gov-cream: #FAF8F5;
+}
+
+/* Custom CSS utilities */
+body {
+  font-family: var(--font-outfit), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Accessibility: High Contrast Mode Overrides */
+body.high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast header {
+  background-color: #000000 !important;
+  border-bottom: 3px solid #ffff00 !important;
+}
+
+body.high-contrast footer {
+  background-color: #000000 !important;
+  border-top: 4px solid #ffff00 !important;
+}
+
+body.high-contrast select,
+body.high-contrast input,
+body.high-contrast textarea,
+body.high-contrast button {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+body.high-contrast a,
+body.high-contrast button:hover,
+body.high-contrast select:focus {
+  color: #ffff00 !important;
+  text-decoration: underline !important;
+}
+
+body.high-contrast p,
+body.high-contrast span,
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4 {
+  color: #ffffff !important;
+}
+
+/* Accessibility: Dyslexic friendly spacing */
+.font-dyslexic {
+  letter-spacing: 0.15em !important;
+  word-spacing: 0.25em !important;
+  line-height: 1.8 !important;
+}
+
+/* Premium Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(199, 163, 73, 0.2);
+}
+
+.glass-dark {
+  background: rgba(17, 26, 46, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Premium luxury micro-interactions */
+.luxury-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(199, 163, 73, 0.15);
+  border-color: rgba(199, 163, 73, 0.4);
+}
+
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+  opacity: 0;
+}
+
+.glow-btn:hover::after {
+  left: 125%;
+  opacity: 1;
+}
+
+.clip-path-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
